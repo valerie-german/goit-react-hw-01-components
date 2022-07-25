@@ -1,0 +1,14 @@
+.statusIsOn {
+  display: inline-block;
+  background-color: green;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
+.statusIsOff {
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
