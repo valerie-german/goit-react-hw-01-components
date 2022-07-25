@@ -1,0 +1,42 @@
+.item:not(:last-child) {
+  padding: 30px 38px 35px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e4e9f0;
+}
+
+.item:last-child {
+  padding: 30px 39px 35px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-right: none;
+}
+
+.item[order='id-1'] {
+  background-color: #50c4f7;
+  border-bottom-left-radius: 8px;
+}
+
+.item[order='id-2'] {
+  background-color: #a43cf3;
+}
+
+.item[order='id-3'] {
+  background-color: #e54d62;
+}
+
+.item[order='id-4'] {
+  background-color: #20b8c5;
+}
+
+.item[order='id-5'] {
+  background-color: #3a9255;
+  border-bottom-right-radius: 8px;
+}
+.percentage {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.8em;
+}

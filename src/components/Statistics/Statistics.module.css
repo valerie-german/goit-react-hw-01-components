@@ -1,0 +1,11 @@
+.statistics {
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 80px;
+  width: 600px;
+  border: 1px solid #d8e0ea;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 40px;
+  box-shadow: 2px 2px 6px -2px rgba(34, 60, 80, 0.15);
+}

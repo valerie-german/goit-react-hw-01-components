@@ -1,15 +1,19 @@
 import PropTypes from 'prop-types';
+import css from './StatItem.module.css';
 
-export const StatItem = ({ label, percentage }) => {
+import classNames from 'classnames';
+
+export const StatItem = ({ id, label, percentage }) => {
   return (
-    <li className="item">
+    <li className={classNames(css.item)} order={id}>
       <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+      <span className={css.percentage}>{percentage}%</span>
     </li>
   );
 };
 
 StatItem.propTypes = {
+  id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };

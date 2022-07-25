@@ -7,11 +7,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e7ecf2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root > div {
+  width: 900px;
+  margin: 30px auto;
 }
 
 p,
@@ -32,7 +38,7 @@ ul {
 img {
   display: block;
   height: auto;
-  width: 30%;
+  width: 100%;
 }
 
 .link {
