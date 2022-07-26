@@ -1,14 +1,19 @@
 import { StatList } from 'components/StatList/StatList';
-import { StatTitle } from 'components/StatTitle/StatTitle';
+
+import PropTypes from 'prop-types';
 
 import css from './Statistics.module.css';
 
-export const Statistics = ({ statistic }) => {
+export const Statistics = ({ statistic, text }) => {
   return (
     <section className={css.statistics}>
-      <StatTitle text="Upload stats"></StatTitle>
+      {text && <h2 className={css.title}>{text}</h2>}
 
-      <StatList stats={statistic}></StatList>
+      <StatList stats={statistic} />
     </section>
   );
+};
+
+Statistics.propTypes = {
+  text: PropTypes.string,
 };

@@ -8,12 +8,7 @@ export const StatList = ({ stats }) => {
     <ul className={css.statList}>
       {stats.map(({ id, label, percentage }) => {
         return (
-          <StatItem
-            key={id}
-            id={id}
-            label={label}
-            percentage={percentage}
-          ></StatItem>
+          <StatItem key={id} id={id} label={label} percentage={percentage} />
         );
       })}
     </ul>

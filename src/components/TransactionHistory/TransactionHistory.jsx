@@ -22,7 +22,7 @@ export const TransactionHistory = ({ items }) => {
               type={type}
               amount={amount}
               currency={currency}
-            ></TransactionHistoryItem>
+            />
           );
         })}
       </tbody>
